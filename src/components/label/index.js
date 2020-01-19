@@ -75,13 +75,13 @@ export default class Label extends PureComponent {
         errorColor:
         focusAnimation.interpolate({
           inputRange: [-1, 0, 1],
-          outputRange: [errorColor, baseColor, tintColor],
+          outputRange: [errorColor,  rgb(194, 37, 37), tintColor],
         });
 
     let textStyle = {
       lineHeight: fontSize,
       fontSize,
-      color: '#c22525',
+      color,
     };
 
     let { x0, y0, x1, y1 } = offset;
